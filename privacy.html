@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy - Murmur</title>
+<style>
+  body { font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
+         max-width: 720px; margin: 0 auto; padding: 48px 24px;
+         color: #201f20; line-height: 1.65; }
+  h1 { font-size: 1.9rem; margin-bottom: 4px; }
+  h2 { font-size: 1.25rem; margin-top: 2rem; }
+  a { color: #2e5bff; }
+  code { background: #f2f2f2; padding: 1px 5px; border-radius: 4px; }
+  footer { margin-top: 48px; padding-top: 16px; border-top: 1px solid #e0e0df;
+            color: #606060; font-size: .85rem; }
+</style></head><body>
+<h1>Privacy Policy - Murmur</h1>
+<p>
+<strong>Effective date:</strong> 2026-11-24
+<br>
+<strong>Contact:</strong> (add your support email before submission)
+</p>
+<p>
+Murmur is a local-first, privacy-first voice notes app. This policy exists
+<br>
+to satisfy App Store Connect / Google Play requirements - the short version
+<br>
+is: **your data never leaves your device unless you explicitly send it to an
+<br>
+AI provider you chose and configured yourself.**
+</p>
+<h2>What Murmur stores</h2>
+<p>
+Everything Murmur creates stays on your device:
+</p>
+<ul>
+<li>Audio recordings (<code>.m4a</code> files) - stored in the app&#x27;s private documents directory.</li>
+<li>Transcripts, AI-formatted outputs, titles, tags, folders, reminders - stored in a local SQLite database on-device.</li>
+<li>API keys - stored only in the platform keychain (iOS Keychain / Android Keystore via <code>flutter_secure_storage</code>).</li>
+</ul>
+<p>
+Murmur operates **no backend servers, no user accounts, and no analytics
+<br>
+collection**. We receive nothing from your use of the app.
+</p>
+<h2>What leaves your device (only when you ask)</h2>
+<p>
+When you tap an AI action (Clean Note, Checklist, Email, Summary, or a custom
+<br>
+prompt), the <strong>text transcript of that note</strong> is sent directly from your
+<br>
+device to the AI provider you selected - Google Gemini, Groq, OpenAI, or your
+<br>
+own custom/local endpoint - using <strong>your own API key</strong>.
+</p>
+<ul>
+<li>Murmur shows a one-time consent dialog before the first send to each</li>
+<p>
+provider, disclosing exactly which provider receives the text.
+</ul>
+</p>
+<ul>
+<li>Your <strong>audio file is never uploaded</strong> by V1 features.</li>
+<li>The provider&#x27;s own privacy policy governs that request:</li>
+<li>Google Gemini API: <a href="https://ai.google.dev/gemini-api/terms">https://ai.google.dev/gemini-api/terms</a></li>
+<li>Groq: <a href="https://groq.com/privacy-policy/">https://groq.com/privacy-policy/</a></li>
+<li>OpenAI: <a href="https://openai.com/policies/privacy-policy/">https://openai.com/policies/privacy-policy/</a></li>
+</ul>
+<p>
+If you never add an API key, nothing is ever transmitted - all recording,
+<br>
+storage, and the offline &quot;Clean Note&quot; action work entirely on-device.
+</p>
+<h2>OS speech recognition</h2>
+<p>
+Live transcription uses the operating system&#x27;s built-in speech service
+<br>
+(Apple Speech / Android SpeechRecognizer), which may process audio on-device
+<br>
+or via the OS vendor&#x27;s servers under your OS settings - that traffic is
+<br>
+between your device and Apple/Google, never through Murmur.
+</p>
+<h2>Deleting your data</h2>
+<p>
+Settings → <strong>&quot;Wipe all local data &amp; keys&quot;</strong> permanently deletes every note,
+<br>
+recording, transcript, AI output, API key and preference in one tap.
+<br>
+Uninstalling the app also removes all app data from the device.
+</p>
+<h2>Purchases</h2>
+<p>
+The optional one-time &quot;Lifetime Pro&quot; unlock is processed by the app store
+<br>
+(Apple App Store / Google Play) via RevenueCat. Murmur receives only an
+<br>
+anonymous entitlement status - never your name, card, or purchase details.
+</p>
+<h2>Children</h2>
+<p>
+Murmur does not knowingly collect any information from anyone, including
+<br>
+children under 13.
+</p>
+<h2>Changes</h2>
+<p>
+This policy may be updated for new features; material changes are noted here.
+</p>
+<footer>Murmur - local-first voice notes &middot; <a href="./">Legal index</a></footer>
+</body></html>
