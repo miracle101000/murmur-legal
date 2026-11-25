@@ -18,16 +18,17 @@
 <p>
 <strong>Effective date:</strong> 2026-11-24
 <br>
-<strong>Contact:</strong> (add your support email before submission)
+<strong>Provider:</strong> Fendo Technologies Limited
+<br>
+<strong>Contact:</strong> <a href="mailto:okolomiracle513@gmail.com">okolomiracle513@gmail.com</a>
 </p>
 <p>
-Brusio is a local-first, privacy-first voice notes app. This policy exists
-<br>
-to satisfy App Store Connect / Google Play requirements - the short version
-<br>
-is: **your data never leaves your device unless you explicitly send it to an
-<br>
-AI provider you chose and configured yourself.**
+Brusio is a local-first, privacy-first voice notes app by Fendo
+Technologies Limited. The short version is: <strong>your recordings,
+transcripts and notes never leave your device unless you explicitly send
+them to an AI provider you chose and configured yourself.</strong> The
+only data we receive is the anonymous analytics and crash reporting
+described below.
 </p>
 <h2>What Brusio stores</h2>
 <p>
@@ -39,9 +40,28 @@ Everything Brusio creates stays on your device:
 <li>API keys - stored only in the platform keychain (iOS Keychain / Android Keystore via <code>flutter_secure_storage</code>).</li>
 </ul>
 <p>
-Brusio operates **no backend servers, no user accounts, and no analytics
-<br>
-collection**. We receive nothing from your use of the app.
+Brusio operates <strong>no backend servers and no user accounts</strong>.
+Your content stays on your device.
+</p>
+<h2>Analytics &amp; crash reporting</h2>
+<p>
+Brusio uses Google Firebase to collect a small amount of anonymous,
+non-personal telemetry so we can keep the app stable:
+</p>
+<ul>
+<li><strong>Firebase Analytics</strong> - anonymous app-usage events (for
+example: a recording started, a transcription ran, the paywall was shown)
+and an anonymous install identifier. Events never contain your audio,
+transcripts, note text, titles, or API keys.</li>
+<li><strong>Firebase Crashlytics</strong> - crash logs, stack traces and
+basic device diagnostics (model, OS version, free storage) sent when the
+app fails.</li>
+</ul>
+<p>
+This data is processed by Google under the
+<a href="https://firebase.google.com/support/privacy">Firebase privacy
+policy</a>. It is not linked to your identity, is never sold or shared for
+advertising, and contains no note content.
 </p>
 <h2>What leaves your device (only when you ask)</h2>
 <p>
@@ -54,22 +74,25 @@ device to the AI provider you selected - Google Gemini, Groq, OpenAI, or your
 own custom/local endpoint - using <strong>your own API key</strong>.
 </p>
 <ul>
-<li>Brusio shows a one-time consent dialog before the first send to each</li>
-<p>
-provider, disclosing exactly which provider receives the text.
+<li>Brusio shows a one-time consent dialog before the first send to each
+provider, disclosing exactly which provider receives the text.</li>
+<li>If you choose a <strong>cloud transcription engine</strong> (Groq,
+OpenAI or Gemini), the <strong>audio file itself</strong> is uploaded to
+that provider for transcription - again after an explicit consent prompt,
+and again using your own key. On-device Whisper and OS transcription send
+nothing.</li>
+<li>The provider&#x27;s own privacy policy governs each request:</li>
 </ul>
-</p>
 <ul>
-<li>Your <strong>audio file is never uploaded</strong> by V1 features.</li>
-<li>The provider&#x27;s own privacy policy governs that request:</li>
 <li>Google Gemini API: <a href="https://ai.google.dev/gemini-api/terms">https://ai.google.dev/gemini-api/terms</a></li>
 <li>Groq: <a href="https://groq.com/privacy-policy/">https://groq.com/privacy-policy/</a></li>
 <li>OpenAI: <a href="https://openai.com/policies/privacy-policy/">https://openai.com/policies/privacy-policy/</a></li>
 </ul>
 <p>
-If you never add an API key, nothing is ever transmitted - all recording,
-<br>
-storage, and the offline &quot;Clean Note&quot; action work entirely on-device.
+If you never add an API key, none of your content is ever transmitted -
+all recording, storage, transcription and the offline &quot;Clean
+Note&quot; action work entirely on-device. Only the anonymous analytics and
+crash telemetry above still applies.
 </p>
 <h2>OS speech recognition</h2>
 <p>
